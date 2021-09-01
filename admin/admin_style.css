@@ -1,0 +1,266 @@
+body{
+    scroll-behavior: smooth;
+}
+/***************************________________ NAVBAR_____________________********** */
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff81;
+    /*padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.6s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    color: rgba(29, 29, 29, 0.555);
+    text-align: center;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 25px;
+    border-radius: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+  }
+  
+  /* Style the logo */
+  #navbar #logo {
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-left: 20px;
+  }
+  
+  /* Links on mouse-over */
+  #navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Style the active/current link */
+  #navbar a.active {
+    background-color: rgb(187, 119, 219);
+    color: white;
+  }
+  
+  /* Display some links to the right */
+  #navbar-right {
+    margin-right: 50px;
+    float: right;
+  }
+  
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
+
+  /**********************************____________Naptár_______________***************************************/
+
+  table{
+    table-layout: fixed;
+}
+td{
+    width: 33%;
+}
+.today{
+    background: pink;
+}
+       @media only screen and (max-width: 760px),
+    (min-device-width: 802px) and (max-device-width: 1020px) {
+
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr {
+            display: block;
+
+        }
+        
+        
+
+        .empty {
+            display: none !important;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        th {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            border: 1px solid rgb(182, 145, 185) !important;
+        }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid rgb(211, 158, 255) !important;
+            position: relative;
+            padding-left: 50%;
+        }
+
+
+
+        /*
+Label the data
+*/
+        td:nth-of-type(1):before {
+            content: "Sunday";
+        }
+        td:nth-of-type(2):before {
+            content: "Monday";
+        }
+        td:nth-of-type(3):before {
+            content: "Tuesday";
+        }
+        td:nth-of-type(4):before {
+            content: "Wednesday";
+        }
+        td:nth-of-type(5):before {
+            content: "Thursday";
+        }
+        td:nth-of-type(6):before {
+            content: "Friday";
+        }
+        td:nth-of-type(7):before {
+            content: "Saturday";
+        }
+
+
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+
+    @media only screen and (min-device-width: 802px) and (max-device-width: 1020px) {
+        body {
+            width: 495px;
+        }
+    }
+
+    @media (min-width:641px) {
+        table {
+            table-layout: fixed;
+        }
+    }
+
+  /********************************_____________Egyéb___________*************************************/
+
+  #pipa p {
+     vertical-align: middle;
+  }
+  #pink{
+      background-color: rgba(250, 227, 253, 0.63);
+  }
+  .lila{
+      background-color: rgb(124, 80, 165);
+  }
+  .ptty{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+  }
+
+  .vilagos{
+      background-color: rgb(235, 207, 248);
+  }
+  .health h4{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(114, 39, 167);
+  }
+  .health hr{
+      color: lightpink;
+  }
+  .health p{
+     font-variant: small-caps; 
+     font-size: 14px;
+  }
+  #kezelcim{
+      top: 50px;
+      margin-top: 80px;
+      
+  }
+  #lentebb{
+      
+      margin-top: 110px !important; 
+  }
+  .font{
+    font-family: 'Dancing Script', cursive;
+  }
+  .nagyobb{
+      font-size: 20px;
+      font-weight: 500;
+  }
+  footer {
+    position: fixed !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .kartya{
+    margin-top: 100px;
+    }
+  .tablazat{
+      margin-top: 100px !important;
+      margin-bottom: 100px !important;
+  }
+  .tablazat table td{
+      height: 50px !important;
+  }
+.adminos td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    position: relative;
+}
+.adminos1{
+    width: 10%;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+}
+.adminos2{
+    width: 20%;
+}
+.adminos3{
+    width: 30%;
+}
+.adminos4{
+    width: 40%;
+}
+.nagyit{
+    font-size: larger;
+}
+#lejjebb{
+    border-bottom: 2px solid rgb(128, 128, 128);
+    border-right: 2px solid rgb(128, 128, 128);
+    border-left: 2px solid rgb(128, 128, 128);
+}
+.mono{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: larger;
+}
+
